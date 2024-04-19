@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio de Sesión</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Estilos personalizados -->
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-image: url('../../Images/MonteEverest.jpg'); /* Ruta de la imagen de fondo */
+      background-size: cover;
+      background-position: center;
+    }
+    .background-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Establece la altura al 100% de la ventana */
+    }
+    .card {
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    }
+    /* Estilos para los campos de entrada */
+    .form-control {
+      border-color: #495057; /* Color del borde */
+      border-width: 2px; /* Ancho del borde */
+    }
+  </style>
+</head>
+<body>
+
+<div class="background-container">
+  <div class="card">
+    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+    <form id="login-form">
+      <div class="mb-3">
+        <label for="username" class="form-label">Usuario</label>
+        <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+    </form>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+<script src="login.js"></script>
