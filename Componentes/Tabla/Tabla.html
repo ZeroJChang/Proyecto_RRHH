@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio de Sesión</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-image: url('../../Images/MonteEverest.jpg'); /* Ruta de la imagen de fondo */
+      background-size: cover;
+      background-position: center;
+    }
+    .background-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Establece la altura al 100% de la ventana */
+    }
+    .card {
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    }
+    .form-control {
+      border-color: #495057; /* Color del borde */
+      border-width: 2px; /* Ancho del borde */
+    }
+    .table-background {
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="background-container">
+    <div class="container mt-4 table-background">
+    <h2 class="text-center">Lista de Empleados</h2>
+    <table class="table table-striped table-background">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>NIT</th>
+            <th>DPI</th>
+            <th>Salario Base</th>
+            <th>Bono</th>
+            <th>Fecha Inicio Trabajo</th>
+            <th>Fecha Baja</th>
+            <th>Dirección</th>
+            <th>Área</th>
+            <th>Puesto</th>
+        </tr>
+        </thead>
+        <tbody id="employee-table-body">
+        <!-- Aquí se llenarán dinámicamente los datos de los empleados -->
+        </tbody>
+    </table>
+    </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Script personalizado para llenar la tabla con datos de la API -->
+<script>
+  $(document).ready(function() {
+    // Llenar la tabla con datos de la API al cargar la página
+    $.ajax({
+      url: 'https://localhost:7282/Planilla',
+      type: 'GET',
+      success: function(data) {
+        // Iterar sobre los datos de los empleados y agregar filas a la tabla
+        $.each(data, function(index, empleado) {
+          $('#employee-table-body').append(
+            '<tr>' +
+            '<td>' + empleado.nombre + '</td>' +
+            '<td>' + empleado.nit + '</td>' +
+            '<td>' + empleado.dpi + '</td>' +
+            '<td>' + empleado.salarioBase + '</td>' +
+            '<td>' + empleado.bono + '</td>' +
+            '<td>' + empleado.fechaInicioTrabajo + '</td>' +
+            '<td>' + (empleado.fechaBaja ? empleado.fechaBaja : '') + '</td>' +
+            '<td>' + empleado.direccion + '</td>' +
+            '<td>' + empleado.area + '</td>' +
+            '<td>' + empleado.puesto + '</td>' +
+            '</tr>'
+          );
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
