@@ -25,3 +25,37 @@ C:\Users\jdele\OneDrive\Escritorio\P RRHH HTML\RecursosHumanosAPI\RecursosHumano
 C:\Users\jdele\OneDrive\Escritorio\P RRHH HTML\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.pdb
 C:\Users\jdele\OneDrive\Escritorio\P RRHH HTML\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.genruntimeconfig.cache
 C:\Users\jdele\OneDrive\Escritorio\P RRHH HTML\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\ref\RecursosHumanosAPI.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\RecursosHumanosAPI.exe
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\RecursosHumanosAPI.deps.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\RecursosHumanosAPI.runtimeconfig.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\RecursosHumanosAPI.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\RecursosHumanosAPI.pdb
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.csproj.AssemblyReference.cache
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.AssemblyInfoInputs.cache
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.AssemblyInfo.cs
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.csproj.CoreCompileInputs.cache
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.sourcelink.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\staticwebassets\msbuild.RecursosHumanosAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.RecursosHumanosAPI.props
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.RecursosHumanosAPI.props
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.RecursosHumanosAPI.props
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\scopedcss\bundle\RecursosHumanosAPI.styles.css
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\Recursos.1B671B09.Up2Date
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\refint\RecursosHumanosAPI.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.pdb
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\RecursosHumanosAPI.genruntimeconfig.cache
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\obj\Debug\net6.0\ref\RecursosHumanosAPI.dll
+C:\Users\Chang\Desktop\Proyecto\Proyecto_RRHH\RecursosHumanosAPI\RecursosHumanosAPI\bin\Debug\net6.0\Newtonsoft.Json.dll

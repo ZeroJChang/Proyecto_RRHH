@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jdele\\OneDrive\\Escritorio\\P RRHH HTML\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj": {}
+    "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jdele\\OneDrive\\Escritorio\\P RRHH HTML\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj": {
+    "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jdele\\OneDrive\\Escritorio\\P RRHH HTML\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
         "projectName": "RecursosHumanosAPI",
-        "projectPath": "C:\\Users\\jdele\\OneDrive\\Escritorio\\P RRHH HTML\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
-        "packagesPath": "C:\\Users\\jdele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jdele\\OneDrive\\Escritorio\\P RRHH HTML\\RecursosHumanosAPI\\RecursosHumanosAPI\\obj\\",
+        "projectPath": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
+        "packagesPath": "C:\\Users\\Chang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jdele\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Chang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,12 +34,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -55,7 +60,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

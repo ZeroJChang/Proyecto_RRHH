@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\controllers\\planillacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\controllers\\planillacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\clase\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\clase\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\recursoshumanosapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\recursoshumanosapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Clase\\Empleados.cs",
+              "RelativeDocumentMoniker": "RecursosHumanosAPI\\Clase\\Empleados.cs",
+              "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Clase\\Empleados.cs",
+              "RelativeToolTip": "RecursosHumanosAPI\\Clase\\Empleados.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T00:13:48.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecursosHumanosAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
+              "RelativeDocumentMoniker": "RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
+              "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
+              "RelativeToolTip": "RecursosHumanosAPI\\RecursosHumanosAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-24T00:12:42.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "RecursosHumanosAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "RecursosHumanosAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T00:09:41.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlanillaController.cs",
+              "DocumentMoniker": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Controllers\\PlanillaController.cs",
+              "RelativeDocumentMoniker": "RecursosHumanosAPI\\Controllers\\PlanillaController.cs",
+              "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Controllers\\PlanillaController.cs",
+              "RelativeToolTip": "RecursosHumanosAPI\\Controllers\\PlanillaController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAIwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T00:10:09.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Program.cs",
+              "RelativeDocumentMoniker": "RecursosHumanosAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Program.cs",
+              "RelativeToolTip": "RecursosHumanosAPI\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAIwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:35:38.429Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
