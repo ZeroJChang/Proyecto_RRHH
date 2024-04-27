@@ -53,7 +53,7 @@
       </div>
       <div class="col-6 fluid bg-light">
         <h2 class="text-center ">Lista de Empleados por Departamento</h2>
-        <a href="../Menu/Menu.html" class="btn btn-primary">Regresar</a>
+        <a href="../Tabla/Tabla.html" class="btn btn-primary">Regresar</a>
         <button type="button" onclick="csv()" class="btn btn-success">Exportar CSV</button>
       </div>
       <div class="col-3">
@@ -116,6 +116,56 @@
 
   // Llamar a buscarEmpleados al cargar la página
   window.onload = buscarEmpleados;
+
+
+  function csv() {
+    // Obtener la tabla y sus filas
+    var tabla = document.querySelector("table");
+    var filas = tabla.querySelectorAll("tr");
+    
+    // Inicializar una cadena para el contenido del CSV
+    var contenidoCSV = "";
+
+    // Recorrer cada fila de la tabla
+    filas.forEach(function(fila) {
+      // Obtener las celdas de la fila
+      var celdas = fila.querySelectorAll("td, th");
+      
+      // Inicializar una cadena para la fila actual del CSV
+      var filaCSV = "";
+
+      // Recorrer cada celda de la fila y agregar su contenido al CSV
+      celdas.forEach(function(celda) {
+        // Agregar el contenido de la celda a la fila del CSV, separado por comas
+        filaCSV += celda.innerText + ",";
+      });
+
+      // Eliminar la última coma y agregar un salto de línea al final de la fila del CSV
+      filaCSV = filaCSV.slice(0, -1) + "\n";
+
+      // Agregar la fila del CSV al contenido total del CSV
+      contenidoCSV += filaCSV;
+    });
+
+    // Crear un objeto Blob con el contenido del CSV
+    var blob = new Blob([contenidoCSV], { type: "text/csv;charset=utf-8" });
+
+    // Crear un objeto URL para el Blob
+    var url = window.URL.createObjectURL(blob);
+
+    // Crear un elemento <a> para descargar el archivo CSV
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "empleados.csv"; // Nombre del archivo CSV
+    document.body.appendChild(a);
+
+    // Hacer clic en el enlace para descargar el archivo CSV
+    a.click();
+
+    // Limpiar el objeto URL y eliminar el elemento <a>
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(a);
+  }
 </script>
 
 </body>
