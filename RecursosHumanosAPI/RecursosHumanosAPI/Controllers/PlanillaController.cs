@@ -30,8 +30,7 @@ namespace RecursosHumanosAPI.Controllers
             return empleados;
         }
 
-        [HttpPost(Name = "AgregarEmpleado")]
-        [Produces("application/json")]
+        [HttpPost("CrearEmpleado", Name = "CrearEmpleado")]
         public IActionResult AgregarEmpleado([FromBody] Empleado nuevoEmpleado)
         {
             var json = System.IO.File.ReadAllText(_jsonFilePath);
@@ -53,7 +52,7 @@ namespace RecursosHumanosAPI.Controllers
             return Ok();
         }
 
-        [HttpPut("EditarEmpleado/{nit}", Name = "EditarEmpleado")]
+        [HttpPost("EditarEmpleado/{nit}", Name = "EditarEmpleado")]
         public IActionResult EditarEmpleado(string nit, [FromBody] Empleado empleadoEditado)
         {
             var json = System.IO.File.ReadAllText(_jsonFilePath);
@@ -85,6 +84,70 @@ namespace RecursosHumanosAPI.Controllers
 
             return Ok("Empleado editado exitosamente");
         }
+
+        // Método para obtener un empleado por su NIT
+        [HttpGet("ObtenerEmpleado/{nit}", Name = "ObtenerEmpleadoPorNIT")]
+        [Produces("application/json", Type = typeof(Empleado))]
+        public IActionResult ObtenerEmpleadoPorNIT(string nit)
+        {
+            var json = System.IO.File.ReadAllText(_jsonFilePath);
+            var empleados = JsonConvert.DeserializeObject <List<Empleado>>(json);
+            var empleado = empleados.FirstOrDefault(e => e.NIT == nit);
+            if (empleado == null)
+            {
+                return NotFound(); // Devolver 404 si no se encuentra el empleado
+            }
+            return Ok(empleado); // Devolver el empleado encontrado
+        }
+
+        [HttpGet("ObtenerEquipo/{area}", Name = "ObtenerEquipo")]
+        public IActionResult ObtenerEquipo(string area)
+        {
+            var json = System.IO.File.ReadAllText(_jsonFilePath);
+            var empleados = JsonConvert.DeserializeObject<List<Empleado>>(json);
+
+            var empleadosFiltrados = empleados.Where(e => e.Area == area).ToList();
+
+            if (empleadosFiltrados.Count == 0)
+            {
+                return NotFound(); // Return 404 if no matching employees are found
+            }
+
+            // Create a list to store the transformed JSON responses
+            var transformedResponses = new List<EmpleadoRespuesta>();
+
+            DateTime fechaFinal;
+            
+            // Iterate through each matching employee and build the JSON response
+            foreach (var empleado in empleadosFiltrados)
+            {
+                if (empleado.FechaBaja == null )
+                {
+                    fechaFinal = DateTime.Now;
+                }
+                else
+                {
+                    fechaFinal = (DateTime)empleado.FechaBaja;
+                }
+                var respuesta = new EmpleadoRespuesta
+                {
+                    Nombre = empleado.Nombre,
+                    SalarioBase = empleado.SalarioBase,
+                    FechaInicioTrabajo = empleado.FechaInicioTrabajo,
+                    FechaBaja = empleado.FechaBaja,
+                    Puesto = empleado.Puesto,
+                    Bono14 = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasBono14(empleado.FechaInicioTrabajo, fechaFinal), 2),
+                    Aguinaldo = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasAguinaldo(empleado.FechaInicioTrabajo, fechaFinal), 2),
+                    Vacaciones = Math.Round((15M / 30) * (empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal)), 2),
+                    Indemnizacion = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal), 2),
+                };
+
+                transformedResponses.Add(respuesta);
+            }
+
+            return Ok(transformedResponses); // Return the list of transformed JSON responses
+        }
+
 
     }
 }

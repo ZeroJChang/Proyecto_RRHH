@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Empleado</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-image: url('../../Images/MonteEverest.jpg'); /* Ruta de la imagen de fondo */
+      background-size: cover;
+      background-position: center;
+    }
+    .content-container {
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para el contenido */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5 content-container">
+  <div class="card">
+    <h2 class="card-header text-center">Modificar Empleado</h2>
+    <div class="card-body">
+      <form id="crear-empleado-form">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre">
+        </div>
+        <div class="mb-3">
+          <label for="nit" class="form-label">NIT</label>
+          <input type="text" class="form-control" id="nit" name="nit" placeholder="Ingrese el NIT">
+        </div>
+        <div class="mb-3">
+          <label for="dpi" class="form-label">DPI</label>
+          <input type="text" class="form-control" id="dpi" name="dpi" placeholder="Ingrese el DPI">
+        </div>
+        <div class="mb-3">
+          <label for="salario" class="form-label">Salario Base</label>
+          <input type="number" class="form-control" id="salario" name="salario" placeholder="Ingrese el salario base">
+        </div>
+        <div class="mb-3">
+          <label for="bono" class="form-label">Bono</label>
+          <input type="number" class="form-control" id="bono" name="bono" placeholder="Ingrese el bono">
+        </div>
+        <div class="mb-3">
+          <label for="fechaInicio" class="form-label">Fecha de Inicio de Trabajo</label>
+          <input type="date" class="form-control" id="fechaInicio" name="fechaInicio">
+        </div>
+        <div class="mb-3">
+          <label for="fechaBaja" class="form-label">Fecha de Baja</label>
+          <input type="date" class="form-control" id="fechaBaja" name="fechaBaja">
+        </div>
+        <div class="mb-3">
+          <label for="direccion" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese la dirección">
+        </div>
+        <div class="mb-3">
+          <label for="area" class="form-label">Área</label>
+          <select class="form-control" id="area" name="area">
+            <option value="Recursos Humanos">Recursos Humanos</option>
+            <option value="IT">IT</option>
+            <option value="Contabilidad">Contabilidad</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="puesto" class="form-label">Puesto</label>
+          <input type="text" class="form-control" id="puesto" name="puesto" placeholder="Ingrese el puesto">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Modificar Empleado</button>
+      </form>
+      <div class="mt-3">
+        <a href="../Tabla/Tabla.html" class="btn btn-secondary">Regresar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+      // Función para obtener el parámetro "nit" de la URL
+      function obtenerParametroURL(nombreParametro) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(nombreParametro);
+      }
+  
+      // Función para obtener y llenar los datos del empleado al cargar la página
+      function obtenerYMostrarEmpleado() {
+        // Obtener el valor de "nit" de la URL
+        const nit = obtenerParametroURL('NIT');
+        if (nit) {
+          // Realizar una solicitud AJAX para obtener los detalles del empleado
+          $.ajax({
+            type: 'GET',
+            url: `https://localhost:7282/Planilla/ObtenerEmpleado/${nit}`,
+            success: function(empleado) {
+              // Llenar los campos del formulario con los datos del empleado
+              $('#nombre').val(empleado.nombre);
+              $('#nit').val(empleado.nit);
+              $('#dpi').val(empleado.dpi);
+              $('#salario').val(empleado.salarioBase);
+              $('#bono').val(empleado.bono);
+              $('#fechaInicio').val(empleado.fechaInicioTrabajo.split('T')[0]); // Formatear fecha
+              $('#fechaBaja').val(empleado.fechaBaja.split('T')[0]); // Formatear fecha
+              $('#direccion').val(empleado.direccion);
+              $('#area').val(empleado.area);
+              $('#puesto').val(empleado.puesto);
+            },
+            error: function(error) {
+              alert('Error al obtener los datos del empleado.');
+              console.error(error);
+            }
+          });
+        } else {
+          alert('No se ha proporcionado el parámetro "NIT" en la URL.');
+        }
+      }
+  
+      // Llamar a la función para obtener y mostrar el empleado al cargar la página
+      obtenerYMostrarEmpleado();
+  
+      // Función para manejar el evento de envío del formulario
+      $('#crear-empleado-form').submit(function(event) {
+        event.preventDefault(); // Evitar el envío del formulario por defecto
+        
+        // Obtener los valores del formulario
+        var formData = {
+          nombre: $('#nombre').val(),
+          nit: $('#nit').val(),
+          dpi: $('#dpi').val(),
+          salarioBase: $('#salario').val(),
+          bono: $('#bono').val(),
+          fechaInicioTrabajo: $('#fechaInicio').val(),
+          fechaBaja: $('#fechaBaja').val(),
+          direccion: $('#direccion').val(),
+          area: $('#area').val(),
+          puesto: $('#puesto').val()
+        };
+  
+        // Obtener el NIT del empleado desde el campo oculto
+        var nitEmpleado = $('#nit').val();
+  
+        // Enviar los datos del empleado al endpoint EditarEmpleado
+        $.ajax({
+          type: 'POST',
+          url: `https://localhost:7282/Planilla/EditarEmpleado/${nitEmpleado}`,
+          contentType: 'application/json',
+          data: JSON.stringify(formData),
+          success: function(response) {
+            alert('Empleado modificado con éxito.');
+            location.reload();
+            console.log(response);
+          },
+          error: function(error) {
+            alert('Error al modificar el empleado.');
+            console.error(error);
+          }
+        });
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

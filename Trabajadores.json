@@ -32,7 +32,7 @@
     "FechaInicioTrabajo": "2024-02-01T00:00:00",
     "FechaBaja": null,
     "Direccion": "Mixco",
-    "Area": "Producción",
+    "Area": "Finanzas",
     "Puesto": "Operario de Maquinaria"
   },
   {
@@ -41,10 +41,22 @@
     "DPI": "3007065750101",
     "SalarioBase": 9750.0,
     "Bono": 250.0,
-    "FechaInicioTrabajo": "2022-04-24T00:30:54.164Z",
-    "FechaBaja": "2024-04-24T00:30:54.164Z",
+    "FechaInicioTrabajo": "2022-04-24T00:00:00",
+    "FechaBaja": "2024-04-24T00:00:00",
     "Direccion": "Ciudad Guatemala",
-    "Area": "Informática",
-    "Puesto": "Desarrollador"
+    "Area": "IT",
+    "Puesto": "Desarrollador Senior D"
+  },
+  {
+    "Nombre": "Mariandree Gomez",
+    "NIT": "11223344",
+    "DPI": "3007063150102",
+    "SalarioBase": 7500.0,
+    "Bono": 250.0,
+    "FechaInicioTrabajo": "2015-02-05T00:00:00",
+    "FechaBaja": "2024-08-28T00:00:00",
+    "Direccion": "Guatemala",
+    "Area": "IT",
+    "Puesto": "Desarrolladora"
   }
 ]

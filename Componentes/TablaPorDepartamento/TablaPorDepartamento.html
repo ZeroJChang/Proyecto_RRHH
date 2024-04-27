@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Empleados</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-image: url('../../Images/MonteEverest.jpg'); /* Ruta de la imagen de fondo */
+      background-size: cover;
+      background-position: center;
+    }
+    .background-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Establece la altura al 100% de la ventana */
+    }
+    .card {
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    }
+    .form-control {
+      border-color: #495057; /* Color del borde */
+      border-width: 2px; /* Ancho del borde */
+    }
+    .table-background {
+      background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .tabla-titulo {
+      font-size: 1.5rem; /* Tamaño de fuente del encabezado de la tabla */
+      padding: 15px; /* Espaciado del encabezado de la tabla */
+      margin-bottom: 20px; /* Separación entre el título y el listBox */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+ <br><br><br>
+ <div class="container">
+    <div class="row tabla-titulo">
+      <div class="col-3">        
+      </div>
+      <div class="col-6 fluid bg-light">
+        <h2 class="text-center ">Lista de Empleados por Departamento</h2>
+        <a href="../Menu/Menu.html" class="btn btn-primary">Regresar</a>
+        <button type="button" onclick="csv()" class="btn btn-success">Exportar CSV</button>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+  <table class="table table-striped table-background">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Salario Base</th>
+        <th>Fecha Inicio Trabajo</th>
+        <th>Fecha Baja</th>
+        <th>Puesto</th>
+        <th>Bono 14</th>
+        <th>Aguinaldo</th>
+        <th>Vacaciones</th>
+        <th>Indemnizacion</th>
+      </tr>
+    </thead>
+    <tbody id="employee-table-body">
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function obtenerParametro(nombre) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    return urlParams.get(nombre);
+  }
+
+  function buscarEmpleados() {
+    var departamento = obtenerParametro('departamento');
+    var url = "https://localhost:7282/Planilla/ObtenerEquipo/" + departamento;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        var employeeTableBody = document.getElementById("employee-table-body");
+        employeeTableBody.innerHTML = ""; // Limpiar la tabla antes de agregar nuevos datos
+        console.log(data)
+        data.forEach(empleado => {
+          var row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${empleado.nombre}</td>
+            <td>${empleado.salarioBase}</td>
+            <td>${new Date(empleado.fechaInicioTrabajo).toLocaleDateString()}</td>
+            <td>${new Date(empleado.fechaBaja).toLocaleDateString()}</td>
+            <td>${empleado.puesto}</td>
+            <td>${empleado.bono14}</td>
+            <td>${empleado.aguinaldo}</td>
+            <td>${empleado.vacaciones}</td>
+            <td>${empleado.indemnizacion}</td>
+          `;
+          employeeTableBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error('Error al buscar empleados:', error));
+  }
+
+  // Llamar a buscarEmpleados al cargar la página
+  window.onload = buscarEmpleados;
+</script>
+
+</body>
+</html>
