@@ -12,6 +12,8 @@
         public string Direccion { get; set; }
         public string Area { get; set; }
         public string Puesto { get; set; }
+        public int Valido { get; set; } 
+        public string? Comentario { get; set; } 
     }
 
 }

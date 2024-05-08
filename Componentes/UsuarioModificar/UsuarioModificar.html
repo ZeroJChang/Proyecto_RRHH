@@ -74,6 +74,14 @@
           <label for="puesto" class="form-label">Puesto</label>
           <input type="text" class="form-control" id="puesto" name="puesto" placeholder="Ingrese el puesto">
         </div>
+        <div class="mb-3">
+          <label for="valido" class="form-label">Pago de Prestaciones</label>
+          <input type="checkbox" class="form-control" id="valido" name="valido" >
+        </div>
+        <div class="mb-3">
+          <label for="comentario" class="form-label">Comentario</label>
+          <input type="text" class="form-control" id="comentario" name="comentario" placeholder="Ingrese un comentario">
+        </div>
         <button type="submit" class="btn btn-primary btn-block">Modificar Empleado</button>
       </form>
       <div class="mt-3">
@@ -113,6 +121,8 @@
               $('#direccion').val(empleado.direccion);
               $('#area').val(empleado.area);
               $('#puesto').val(empleado.puesto);
+              $('#comentario').val(empleado.comentario);
+              $('#valido').val(empleado.valido);
             },
             error: function(error) {
               alert('Error al obtener los datos del empleado.');

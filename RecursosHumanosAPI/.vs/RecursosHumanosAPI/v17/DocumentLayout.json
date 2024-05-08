@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\controllers\\planillacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\controllers\\calculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\controllers\\calculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\clase\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\clase\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\controllers\\calculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|solutionrelative:recursoshumanosapi\\controllers\\calculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C3F005F-6E66-4CC1-B6F1-9D87B9D898F7}|RecursosHumanosAPI\\RecursosHumanosAPI.csproj|c:\\users\\chang\\desktop\\proyecto\\proyecto_rrhh\\recursoshumanosapi\\recursoshumanosapi\\clase\\empleadorespuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,15 +42,16 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Calculos.cs",
               "DocumentMoniker": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Controllers\\Calculos.cs",
               "RelativeDocumentMoniker": "RecursosHumanosAPI\\Controllers\\Calculos.cs",
               "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Controllers\\Calculos.cs",
               "RelativeToolTip": "RecursosHumanosAPI\\Controllers\\Calculos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T18:46:59.598Z"
+              "WhenOpened": "2024-04-27T18:46:59.598Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,21 +61,23 @@
               "RelativeDocumentMoniker": "RecursosHumanosAPI\\Clase\\EmpleadoRespuesta.cs",
               "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Clase\\EmpleadoRespuesta.cs",
               "RelativeToolTip": "RecursosHumanosAPI\\Clase\\EmpleadoRespuesta.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAQwAwAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T18:19:48.515Z"
+              "WhenOpened": "2024-04-27T18:19:48.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Empleados.cs",
               "DocumentMoniker": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Clase\\Empleados.cs",
               "RelativeDocumentMoniker": "RecursosHumanosAPI\\Clase\\Empleados.cs",
               "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Clase\\Empleados.cs",
               "RelativeToolTip": "RecursosHumanosAPI\\Clase\\Empleados.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAzwAQAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T00:13:48.637Z"
+              "WhenOpened": "2024-04-24T00:13:48.637Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -108,7 +111,7 @@
               "RelativeDocumentMoniker": "RecursosHumanosAPI\\Controllers\\PlanillaController.cs",
               "ToolTip": "C:\\Users\\Chang\\Desktop\\Proyecto\\Proyecto_RRHH\\RecursosHumanosAPI\\RecursosHumanosAPI\\Controllers\\PlanillaController.cs",
               "RelativeToolTip": "RecursosHumanosAPI\\Controllers\\PlanillaController.cs",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAAIwAAAChAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwEoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T00:10:09.762Z",
               "EditorCaption": ""

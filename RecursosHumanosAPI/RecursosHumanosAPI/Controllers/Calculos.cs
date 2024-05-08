@@ -22,8 +22,9 @@
             }
             else
             {
-                // If fechaInicio is after or equal to 01/06/2024, return 0 days
-                return 0;
+
+                TimeSpan diferencia = fechaFinal - fechaInicio;
+                return diferencia.Days;
             }
         }
 
@@ -39,7 +40,8 @@
             }
             else
             {
-                return 0;
+                TimeSpan diferencia = fechaFinal - fechaInicio;
+                return diferencia.Days;
             }
         }
     }

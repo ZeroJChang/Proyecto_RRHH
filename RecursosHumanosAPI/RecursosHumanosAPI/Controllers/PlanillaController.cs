@@ -35,20 +35,16 @@ namespace RecursosHumanosAPI.Controllers
         {
             var json = System.IO.File.ReadAllText(_jsonFilePath);
             var empleados = JsonConvert.DeserializeObject<List<Empleado>>(json);
-
             // Verifica si el NIT del nuevo empleado ya existe
             if (empleados.Any(e => e.NIT == nuevoEmpleado.NIT))
             {
                 return Conflict("El empleado ya existe");
             }
-
             // Agrega el nuevo empleado a la lista
             empleados.Add(nuevoEmpleado);
-
             // Serializa la lista actualizada y la guarda en el archivo JSON
             var jsonActualizado = JsonConvert.SerializeObject(empleados, Formatting.Indented);
             System.IO.File.WriteAllText(_jsonFilePath, jsonActualizado);
-
             return Ok();
         }
 
@@ -77,6 +73,7 @@ namespace RecursosHumanosAPI.Controllers
             empleado.Direccion = empleadoEditado.Direccion;
             empleado.Area = empleadoEditado.Area;
             empleado.Puesto = empleadoEditado.Puesto;
+            empleado.Comentario = empleadoEditado.Comentario;
 
             // Serializa la lista actualizada y la guarda en el archivo JSON
             var jsonActualizado = JsonConvert.SerializeObject(empleados, Formatting.Indented);
@@ -129,23 +126,46 @@ namespace RecursosHumanosAPI.Controllers
                 {
                     fechaFinal = (DateTime)empleado.FechaBaja;
                 }
-                var respuesta = new EmpleadoRespuesta
+                if (empleado.Valido == 1)
                 {
-                    Nombre = empleado.Nombre,
-                    SalarioBase = empleado.SalarioBase,
-                    FechaInicioTrabajo = empleado.FechaInicioTrabajo,
-                    FechaBaja = empleado.FechaBaja,
-                    Puesto = empleado.Puesto,
-                    Bono14 = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasBono14(empleado.FechaInicioTrabajo, fechaFinal), 2),
-                    Aguinaldo = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasAguinaldo(empleado.FechaInicioTrabajo, fechaFinal), 2),
-                    Vacaciones = Math.Round((15M / 30) * (empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal)), 2),
-                    Indemnizacion = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal), 2),
-                };
+                    var respuesta = new EmpleadoRespuesta
+                    {
+                        Nombre = empleado.Nombre,
+                        SalarioBase = empleado.SalarioBase,
+                        FechaInicioTrabajo = empleado.FechaInicioTrabajo,
+                        FechaBaja = empleado.FechaBaja,
+                        Puesto = empleado.Puesto,
+                        Bono14 = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasBono14(empleado.FechaInicioTrabajo, fechaFinal), 2),
+                        Aguinaldo = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasAguinaldo(empleado.FechaInicioTrabajo, fechaFinal), 2),
+                        Vacaciones = Math.Round((15M / 30) * (empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal)), 2),
+                        Indemnizacion = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal), 2),
+                        Comentario = ""
+                    };
+                    transformedResponses.Add(respuesta);
+                }
+                else
+                {
+                    var respuesta = new EmpleadoRespuesta
+                    {
+                        Nombre = empleado.Nombre,
+                        SalarioBase = empleado.SalarioBase,
+                        FechaInicioTrabajo = empleado.FechaInicioTrabajo,
+                        FechaBaja = empleado.FechaBaja,
+                        Puesto = empleado.Puesto,
+                        Bono14 = 0,
+                        Aguinaldo = 0,
+                        Vacaciones = 0,
+                        Indemnizacion = 0,
+                        Comentario = empleado.Comentario
+                    };
+                    transformedResponses.Add(respuesta);
+                }
+             
 
-                transformedResponses.Add(respuesta);
+                
             }
 
-            return Ok(transformedResponses); // Return the list of transformed JSON responses
+            return Ok(transformedResponses); 
         }
 
 

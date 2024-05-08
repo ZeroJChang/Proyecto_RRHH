@@ -1,5 +1,47 @@
 [
   {
+    "Nombre": "Isabel Gómez",
+    "NIT": "112233445",
+    "DPI": "3060616263641",
+    "SalarioBase": 6100.0,
+    "Bono": 290.0,
+    "FechaInicioTrabajo": "2023-02-15T00:00:00",
+    "FechaBaja": "2024-04-15T00:00:00",
+    "Direccion": "Sololá",
+    "Area": "Recursos Humanos",
+    "Puesto": "Coordinador de Relaciones Laborales",
+    "Valido": 0,
+    "Comentario": "Debido a falta de cumplimiento de contrato"
+  },
+  {
+    "Nombre": "Ricardo Hernández",
+    "NIT": "778899001",
+    "DPI": "3065666768691",
+    "SalarioBase": 6400.0,
+    "Bono": 310.0,
+    "FechaInicioTrabajo": "2023-08-08T00:00:00",
+    "FechaBaja": null,
+    "Direccion": "Totonicapán",
+    "Area": "IT",
+    "Puesto": "Ingeniero de Sistemas",
+    "Valido": 1,
+    "Comentario": ""
+  },
+  {
+    "Nombre": "Silvia Martínez",
+    "NIT": "223344556",
+    "DPI": "3070717273741",
+    "SalarioBase": 5700.0,
+    "Bono": 240.0,
+    "FechaInicioTrabajo": "2022-12-05T00:00:00",
+    "FechaBaja": "2024-01-05T00:00:00",
+    "Direccion": "Zacapa",
+    "Area": "Finanzas",
+    "Puesto": "Analista Tributario",
+    "Valido": 0,
+    "Comentario": "Debido a falta de cumplimiento de contrato"
+  },
+  {
     "Nombre": "Juan Pérez",
     "NIT": "123456789",
     "DPI": "1234 56789 0101",
@@ -9,7 +51,9 @@
     "FechaBaja": "2024-04-10T00:00:00",
     "Direccion": "Ciudad de Guatemala",
     "Area": "Recursos Humanos",
-    "Puesto": "Analista de Nómina"
+    "Puesto": "Analista de Nómina",
+    "Valido": 1,
+    "Comentario": ""
   },
   {
     "Nombre": "María González",
@@ -21,7 +65,9 @@
     "FechaBaja": "2023-12-31T00:00:00",
     "Direccion": "Villa Nueva",
     "Area": "Finanzas",
-    "Puesto": "Contadora"
+    "Puesto": "Contadora",
+    "Valido": 1,
+    "Comentario": ""
   },
   {
     "Nombre": "Pedro Ramírez",
@@ -30,10 +76,12 @@
     "SalarioBase": 4800.0,
     "Bono": 250.0,
     "FechaInicioTrabajo": "2024-02-01T00:00:00",
-    "FechaBaja": null,
+    "FechaBaja": "2024-03-01T00:00:00",
     "Direccion": "Mixco",
     "Area": "Finanzas",
-    "Puesto": "Operario de Maquinaria"
+    "Puesto": "Operario de Maquinaria",
+    "Valido": 1,
+    "Comentario": ""
   },
   {
     "Nombre": "José De León",
@@ -45,7 +93,9 @@
     "FechaBaja": "2024-04-24T00:00:00",
     "Direccion": "Ciudad Guatemala",
     "Area": "IT",
-    "Puesto": "Desarrollador Senior D"
+    "Puesto": "Desarrollador Senior D",
+    "Valido": 1,
+    "Comentario": ""
   },
   {
     "Nombre": "Mariandree Gomez",
@@ -57,6 +107,36 @@
     "FechaBaja": "2024-08-28T00:00:00",
     "Direccion": "Guatemala",
     "Area": "IT",
-    "Puesto": "Desarrolladora"
+    "Puesto": "Desarrolladora",
+    "Valido": 1,
+    "Comentario": ""
+  },
+  {
+    "Nombre": "Joseph Perez",
+    "NIT": "321654",
+    "DPI": "0101010110101",
+    "SalarioBase": 3500.0,
+    "Bono": 250.0,
+    "FechaInicioTrabajo": "2024-04-01T00:00:00",
+    "FechaBaja": "2024-04-30T00:00:00",
+    "Direccion": "Guatemala",
+    "Area": "IT",
+    "Puesto": "Desarrollador",
+    "Valido": 1,
+    "Comentario": ""
+  },
+  {
+    "Nombre": "Drake Bell",
+    "NIT": "1592648",
+    "DPI": "1593159480101",
+    "SalarioBase": 6500.0,
+    "Bono": 250.0,
+    "FechaInicioTrabajo": "2024-01-01T00:00:00",
+    "FechaBaja": "2024-05-07T00:00:00",
+    "Direccion": "Guatemala",
+    "Area": "IT",
+    "Puesto": "Desarrollador",
+    "Valido": 1,
+    "Comentario": ""
   }
 ]

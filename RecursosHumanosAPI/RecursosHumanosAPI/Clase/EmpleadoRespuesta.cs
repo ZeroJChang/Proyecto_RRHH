@@ -11,5 +11,6 @@
         public decimal Aguinaldo { get; set;}
         public decimal Vacaciones { get; set; }
         public decimal Indemnizacion { get; set; }
+        public string? Comentario { get; set; }
     }
 }
