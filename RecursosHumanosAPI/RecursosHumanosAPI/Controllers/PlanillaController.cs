@@ -138,7 +138,7 @@ namespace RecursosHumanosAPI.Controllers
                         Bono14 = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasBono14(empleado.FechaInicioTrabajo, fechaFinal), 2),
                         Aguinaldo = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDiasAguinaldo(empleado.FechaInicioTrabajo, fechaFinal), 2),
                         Vacaciones = Math.Round((15M / 30) * (empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal)), 2),
-                        Indemnizacion = Math.Round(empleado.SalarioBase / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal), 2),
+                        Indemnizacion = Math.Round((empleado.SalarioBase/6 + empleado.SalarioBase) / 365 * new Calculos().CalcularDias(empleado.FechaInicioTrabajo, fechaFinal), 2),
                         Comentario = ""
                     };
                     transformedResponses.Add(respuesta);
